@@ -3,10 +3,10 @@ import os
 class Config():
   ENV = bool(os.environ.get('ENV', False))
   if ENV:
-    BOT_TOKEN  =  os . Environment . get ( "1406554961:AAEk4Gvilc0q2R3m3L07jxG5f78RVEukDl4" , Nessuno )
-    DATABASE_URL = os.environ.get("DATABASE_URL", None)
-    APP_ID  =  os . Environment . get ( "1561405" , 6 )
-    API_HASH  =  os . Environment . get ( "a38135e34dbecb5032d22d5739a6b967" , Nessuno )
+    BOT_TOKEN    =    os . Ambiente . get ( "1406554961: AAEk4Gvilc0q2R3m3L07jxG5f78RVEukDl4",  Nessuno )
+    DATABASE_URL  =  os . Environment . get ( "DATABASE_URL" , Nessuno )
+    APP_ID   =   os . Ambiente . get ( "1561405", 6 )
+    API_HASH  =  os . Environment . get ( "a38135e34dbecb5032d22d5739a6b967", Nessuno )
     SUDO_USERS = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
     SUDO_USERS.append(939425014)
     SUDO_USERS = list(set(SUDO_USERS))
